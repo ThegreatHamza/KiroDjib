@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KiroDjib — Location d'appartements et villas à Djibouti</title>
+  <meta name="description" content="Annonces de location à Djibouti : appartements, villas, studios et bureaux. Contact direct avec les propriétaires sur WhatsApp.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root { --brand: #0f6e7a; --brand-dark: #0b3d45; --accent: #f2b544; }
+    .lcard { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); text-decoration: none; color: inherit; transition: transform .15s; }
+    .lcard:hover { transform: translateY(-2px); }
+    .ph { height: 180px; background: #dfe9ea center/cover no-repeat; position: relative; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+    .ph.big { height: 320px; border-radius: var(--radius); }
+    .ph .badge { position: absolute; top: .6rem; left: .6rem; }
+    .lcard .body { padding: .8rem 1rem 1rem; }
+    .lcard .price { font-weight: 800; font-size: 1.15rem; color: var(--brand); }
+    .lcard .price small { font-weight: 500; color: var(--muted); }
+    .lcard .ttl { font-weight: 600; margin: .2rem 0; }
+    .lcard .meta { color: var(--muted); font-size: .85rem; }
+    .searchbar label { color: #fff; }
+    .gallery { display: grid; gap: .4rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); margin-bottom: 1rem; }
+    .gallery img { border-radius: 10px; height: 220px; width: 100%; object-fit: cover; }
+    .thumbs { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .thumbs div { position: relative; } .thumbs img { width: 92px; height: 70px; object-fit: cover; border-radius: 8px; }
+    .thumbs button { position: absolute; top: 2px; right: 2px; border: 0; border-radius: 50%; width: 22px; height: 22px; background: rgba(0,0,0,.6); color: #fff; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap"><a class="logo" href="#/">Kiro<span>Djib</span></a><nav id="nav"></nav></div></header>
+  <main id="app"><div class="loading">Chargement…</div></main>
+  <footer>KiroDjib · Location immobilière à Djibouti · Paiements D-Money / Waafi / CAC Pay</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
